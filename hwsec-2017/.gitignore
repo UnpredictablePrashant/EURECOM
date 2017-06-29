@@ -1,0 +1,8 @@
+.*.swp
+*.o
+*.so
+*.pyc
+ta
+ta.dat
+ta.key
+ta_acquisition
