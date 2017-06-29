@@ -1,0 +1,7 @@
+r=$(pwd)
+o=/tmp/build.$USER/sim
+p=/tmp/build.$USER/syn
+mkdir -p $o
+mkdir -p $p
+export PATH=$PATH:/packages/LabSoC/Mentor/Modelsim/bin
+export PATH=$PATH:/packages/LabSoC/Xilinx/bin

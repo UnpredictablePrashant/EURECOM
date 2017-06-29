@@ -1,0 +1,38 @@
+#DHT11 Documentation
+
+##Authors
+
+* Maria Teresa Bevivino
+* Michela Lecce
+* Sejal Jain
+* Prerna Birdhi
+
+## Block diagram
+The architecture of this controller is made mainly of a datapath and an FSM. Some components are put outside the dht11_ctrl wrapper, like the checksum, debouncer and the display component, but they are virtually part of the datapath as well.
+Inside the datapath we have:
+* counter
+* checker
+* global_checker
+* checksum
+* samplerhift register
+* display
+* counter
+* debouncer
+
+### Counter
+
+The counter is parametric with the frequency and the value neede to be vounted. It has a signal to make it start, one to acknowledge the finish, the synchronous negative reset and of course the clock.
+What it actually counts is the time in us. In this implementation is needed to count the first 18 ms for which the controller should drive the line to communicate with the sensor.
+
+### Sampler
+
+This component measures the time it passes between
+
+
+## Technical details
+
+## Functional validation
+
+## Synthesis
+
+## Experiments on the Zybo

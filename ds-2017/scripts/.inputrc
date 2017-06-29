@@ -1,0 +1,11 @@
+#--------------------------------------------------------------------------------
+# Smart history: type the beginning of a command and use the up/down arrows to
+# navigate in the history of commands that have the same beginning
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+#--------------------------------------------------------------------------------
+# <TAB> shows all possible completions one first hit (avoids a second
+# keystroke).
+set show-all-if-ambiguous on
+

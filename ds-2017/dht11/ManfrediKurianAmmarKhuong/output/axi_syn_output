@@ -1,0 +1,49 @@
+-midi$ picocom -b115200 -fn -pn -d8 -r -l /dev/ttyUSB1 
+picocom v1.7
+
+port is        : /dev/ttyUSB1
+flowcontrol    : none
+baudrate is    : 115200
+parity is      : none
+databits are   : 8
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : yes
+nolock is      : yes
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv
+imap is        : 
+omap is        : 
+emap is        : crcrlf,delbs,
+
+Terminal ready
+
+Welcome to SAB4Z (c) Telecom ParisTech
+sab4z login: root
+Sab4z> 
+Sab4z> devmem 0x40000000 32
+0x37001800
+Sab4z> devmem 0x40000004 32
+0x00000000
+Sab4z> devmem 0x40000008 32
+Unhandled fault: external abort on non-linefetch (0x018) at 0xb6f76008
+pgd = de7d8000
+[b6f76008] *pgd=1e7ce831, *pte=40000783, *ppte=40000e33
+Bus error
+Sab4z> devmem 0x40000000 32 0
+Unhandled fault: external abort on non-linefetch (0x1818) at 0xb6fcc000
+pgd = dd8c0000
+[b6fcc000] *pgd=1d94d831, *pte=40000743, *ppte=40000c33
+Bus error
+Sab4z> devmem 0x40000004 32 0
+Unhandled fault: external abort on non-linefetch (0x1818) at 0xb6f58004
+pgd = de7d8000
+[b6f58004] *pgd=1d94d831, *pte=40000743, *ppte=40000c33
+Bus error
+Sab4z> devmem 0x40000008 32 0
+Unhandled fault: external abort on non-linefetch (0x818) at 0xb6ff4008
+pgd = dd8c0000
+[b6ff4008] *pgd=1da49831, *pte=40000743, *ppte=40000c33
+Bus error
+Sab4z> 

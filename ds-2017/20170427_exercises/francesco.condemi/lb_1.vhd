@@ -1,0 +1,61 @@
+library ieee;
+ use ieee.std_logic_1164.all;
+ 
+ entity lb is   
+generic (freq : positive range 1 to 1000;
+         timeout: positive range 1 to 1000000 );
+  port(        clk:    in std_ulogic; 
+               areset:    in std_ulogic;  
+
+                led:  out std_ulogic_vector(3 downto 0)
+       );
+
+end entity lb;
+
+architecture arc of lb is 
+
+signal q1 : std_ulogic;
+signal sresetn : std_ulogic;
+signal out_timer : std_ulogic;
+signal out_proc : std_ulogic;
+signal flag : std_ulogic;
+signal out_sr: std_ulogic_vector(3 downto 0);
+ begin
+process(clk)
+begin
+ if(clk='1' and clk'EVENT) then
+q1<=not(areset);
+  end if;
+ end process;
+
+
+
+process(clk)
+begin
+ if(CLK='1' and CLK'EVENT) then
+sresetn<=q1;
+  end if;
+ end process;
+
+T: entity work.timer(arc)
+	generic map (freq=> freq, timeout => timeout)
+	port map      (clk => clk, sresetn=>sresetn, pulse=>out_timer );
+
+sr: entity work.sr(arc)
+	generic map (freq=> freq, timeout => timeout)
+	port map      (clk => clk, sresetn=>sresetn,shift=>out_timer,di=>out_proc,do=>out_sr);
+
+flag<='0';
+
+process (out_timer, led(0))
+begin
+if (out_timer='1' and flag='0') then
+   out_proc<='1';
+   flag='1';
+else 
+ out_proc<=led(0);
+end if;
+end process;
+
+led<=out_sr;
+end architecture arc;

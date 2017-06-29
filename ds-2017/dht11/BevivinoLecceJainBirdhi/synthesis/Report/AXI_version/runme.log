@@ -1,0 +1,712 @@
+
+*** Running vivado
+    with args -log top_dht11_axi_top_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_dht11_axi_top_0.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source top_dht11_axi_top_0.tcl -notrace
+Command: synth_design -top top_dht11_axi_top_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7597 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1081.207 ; gain = 178.297 ; free physical = 11598 ; free virtual = 30454
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_dht11_axi_top_0' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ip/top_dht11_axi_top_0/synth/top_dht11_axi_top_0.vhd:83]
+	Parameter freq bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'dht11_axi_top' declared at '/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_axi_top.vhd:9' bound to instance 'U0' of component 'dht11_axi_top' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ip/top_dht11_axi_top_0/synth/top_dht11_axi_top_0.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'dht11_axi_top' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_axi_top.vhd:39]
+	Parameter freq bound to: 100 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dht11_axi' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_axi.vhd:76]
+	Parameter freq bound to: 100 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dht11_ctrl' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_ctrl.vhd:27]
+	Parameter freq bound to: 100 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FSM' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/FSM.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (1#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/FSM.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'datapath' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/datapath.vhd:36]
+	Parameter freq bound to: 100 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'global_checker' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/global_checker.vhd:26]
+	Parameter freq bound to: 100 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'checker_20_40' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/checker_20_40.vhd:16]
+	Parameter freq bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'checker_20_40' (2#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/checker_20_40.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'checker_26_28' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/checker_26_28.vhd:16]
+	Parameter freq bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'checker_26_28' (3#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/checker_26_28.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'checker' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/checker.vhd:21]
+	Parameter N bound to: 80 - type: integer 
+	Parameter low_lim bound to: 64 - type: integer 
+	Parameter freq bound to: 100 - type: integer 
+	Parameter up_lim bound to: 96 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'checker' (4#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/checker.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'checker__parameterized0' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/checker.vhd:21]
+	Parameter N bound to: 50 - type: integer 
+	Parameter low_lim bound to: 35 - type: integer 
+	Parameter freq bound to: 100 - type: integer 
+	Parameter up_lim bound to: 63 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'checker__parameterized0' (4#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/checker.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'checker__parameterized1' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/checker.vhd:21]
+	Parameter N bound to: 70 - type: integer 
+	Parameter low_lim bound to: 53 - type: integer 
+	Parameter freq bound to: 100 - type: integer 
+	Parameter up_lim bound to: 87 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'checker__parameterized1' (4#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/checker.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'global_checker' (5#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/global_checker.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'sampler2' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/sampler2.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'sampler2' (6#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/sampler2.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'sr' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/sr.vhd:17]
+	Parameter N bound to: 40 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sr' (7#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/sr.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'counter_master' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/counter_master.vhd:16]
+	Parameter freq bound to: 100 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'counter' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/counter.vhd:16]
+	Parameter N bound to: 18 - type: integer 
+	Parameter freq bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (8#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/counter.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized0' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/counter.vhd:16]
+	Parameter N bound to: 23 - type: integer 
+	Parameter freq bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized0' (8#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/counter.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'counter_master' (9#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/counter_master.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (10#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/datapath.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'dht11_ctrl' (11#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_ctrl.vhd:27]
+INFO: [Synth 8-226] default block is never used [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_axi.vhd:110]
+WARNING: [Synth 8-614] signal 's0_axi_arvalid' is read in the process but is not in the sensitivity list [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_axi.vhd:107]
+WARNING: [Synth 8-614] signal 's0_axi_awvalid' is read in the process but is not in the sensitivity list [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_axi.vhd:107]
+WARNING: [Synth 8-614] signal 'do' is read in the process but is not in the sensitivity list [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_axi.vhd:172]
+WARNING: [Synth 8-3848] Net start in module/entity dht11_axi does not have driver. [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_axi.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'dht11_axi' (12#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_axi.vhd:76]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: lvcmos33 - type: string 
+	Parameter SLEW bound to: slow - type: string 
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'IOBUF' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_axi_top.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'dht11_axi_top' (13#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_axi_top.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'top_dht11_axi_top_0' (14#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ip/top_dht11_axi_top_0/synth/top_dht11_axi_top_0.vhd:83]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_arprot[2]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_arprot[1]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_arprot[0]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_awprot[2]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_awprot[1]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_awprot[0]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[31]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[30]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[29]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[28]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[27]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[26]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[25]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[24]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[23]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[22]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[21]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[20]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[19]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[18]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[17]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[16]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[15]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[14]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[13]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[12]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[11]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[10]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[9]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[8]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[7]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[6]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[5]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[4]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[3]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[2]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[1]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wdata[0]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wstrb[3]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wstrb[2]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wstrb[1]
+WARNING: [Synth 8-3331] design dht11_axi has unconnected port s0_axi_wstrb[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1122.684 ; gain = 219.773 ; free physical = 11555 ; free virtual = 30412
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u0:start to constant 0 [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/a7e7/dht11_axi_top.srcs/sources_1/imports/Datapath/dht11_axi.vhd:92]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1122.684 ; gain = 219.773 ; free physical = 11555 ; free virtual = 30411
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1436.141 ; gain = 0.000 ; free physical = 11391 ; free virtual = 30248
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11390 ; free virtual = 30246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11390 ; free virtual = 30246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11390 ; free virtual = 30246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSM'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'dht11_axi'
+INFO: [Synth 8-5544] ROM "s0_axi_bvalid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s0_axi_bresp" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s0_axi_awready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s0_axi_rvalid" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s0_axi_rresp" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s0_axi_arready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00000 |                            00000
+        starting_process |                            00001 |                            00001
+                wait18ms |                            00010 |                            00010
+          start_sampler0 |                            00011 |                            00011
+        check_20_40us_on |                            00100 |                            00100
+       check_20_40us_off |                            00101 |                            00101
+       rst_before_sampl1 |                            00110 |                            00110
+          start_sampler1 |                            00111 |                            00111
+     check_80us_on_first |                            01000 |                            01000
+    check_80us_off_first |                            01001 |                            01001
+       rst_before_sampl2 |                            01010 |                            01011
+          start_sampler2 |                            01011 |                            01100
+    check_80us_on_second |                            01100 |                            01101
+   check_80us_off_second |                            01101 |                            01110
+       rst_before_sampl3 |                            01110 |                            01111
+          start_sampler3 |                            01111 |                            10000
+               set_index |                            10000 |                            10001
+           check_50us_on |                            10001 |                            10010
+          check_50us_off |                            10010 |                            10011
+       rst_before_sampl4 |                            10011 |                            10100
+          start_sampler4 |                            10100 |                            10101
+       check_one_zero_on |                            10101 |                            11000
+      check_one_zero_off |                            10110 |                            11001
+               shift_one |                            10111 |                            11010
+              shift_zero |                            11000 |                            11011
+              stop_shift |                            11001 |                            11100
+         increment_index |                            11010 |                            11101
+       rst_before_sampl5 |                            11011 |                            10110
+          start_sampler5 |                            11100 |                            10111
+              data_ready |                            11101 |                            11110
+          protocol_error |                            11110 |                            01010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                   write |                              001 |                              100
+               write_val |                              010 |                              101
+               write_err |                              011 |                              110
+           write_err_val |                              100 |                              111
+                    read |                              101 |                              001
+                read_val |                              110 |                              010
+                read_err |                              111 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'dht11_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11385 ; free virtual = 30242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	  31 Input      5 Bit        Muxes := 1     
+	  50 Input      5 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	  31 Input      1 Bit        Muxes := 18    
+	   8 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	  31 Input      5 Bit        Muxes := 1     
+	  50 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  31 Input      1 Bit        Muxes := 18    
+Module checker_20_40 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module checker_26_28 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module checker 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module checker__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module checker__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module sampler2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module sr 
+Detailed RTL Component Info : 
++---Registers : 
+	               40 Bit    Registers := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+Module counter__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+Module dht11_axi 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[29]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[28]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[27]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[26]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[25]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[24]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[23]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[22]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[21]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[20]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[19]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[18]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[17]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[16]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[15]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[14]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[13]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[12]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[11]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[10]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[9]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[8]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[7]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[6]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[5]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[4]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[3]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[2]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[1]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_araddr[0]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_arprot[2]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_arprot[1]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_arprot[0]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[29]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[28]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[27]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[26]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[25]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[24]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[23]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[22]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[21]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[20]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[19]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[18]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[17]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[16]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[15]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[14]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[13]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[12]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[11]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[10]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[9]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[8]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[7]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[6]
+WARNING: [Synth 8-3331] design top_dht11_axi_top_0 has unconnected port s0_axi_awaddr[5]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[1]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[2]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[3]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[4]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[5]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[6]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[7]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[8]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[9]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[10]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[11]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[12]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[13]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[14]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[15]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[16]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[17]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[18]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[19]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[20]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[21]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[22]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[23]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[24]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[25]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[26]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[27]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[28]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[29]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[30]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/u0/u0/DP/c_counter/c1/flag_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/u0/u0/DP/c_sampler/flag_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_sampler/flag_reg[1]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c1/flag_reg[31]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[31]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[30]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[29]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[28]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[27]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[26]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[25]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[24]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[23]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[22]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[21]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[20]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[19]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[18]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[17]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[16]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[15]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[14]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[13]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[12]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[11]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[10]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[9]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[8]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[7]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[6]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[5]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[4]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[3]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[2]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[1]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[0]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[0]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[1]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[2]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[3]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[4]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[5]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[6]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[7]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[8]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[9]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[10]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[11]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[12]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[13]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[14]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[15]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[16]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[17]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[18]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[19]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[20]) is unused and will be removed from module top_dht11_axi_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[21]) is unused and will be removed from module top_dht11_axi_top_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11370 ; free virtual = 30227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11327 ; free virtual = 30184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11327 ; free virtual = 30184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11309 ; free virtual = 30166
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11309 ; free virtual = 30166
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11309 ; free virtual = 30166
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11309 ; free virtual = 30166
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11309 ; free virtual = 30166
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11309 ; free virtual = 30165
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11309 ; free virtual = 30165
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name         | RTL Name                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_dht11_axi_top_0 | U0/u0/u0/DP/c_shift_register/reg_reg[8] | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++--------------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    45|
+|2     |LUT1   |    88|
+|3     |LUT2   |   144|
+|4     |LUT3   |     9|
+|5     |LUT4   |    41|
+|6     |LUT5   |    24|
+|7     |LUT6   |    21|
+|8     |MUXF7  |     3|
+|9     |MUXF8  |     1|
+|10    |SRL16E |     1|
+|11    |FDRE   |   145|
+|12    |FDSE   |     4|
+|13    |IOBUF  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------------+------------------------+------+
+|      |Instance                    |Module                  |Cells |
++------+----------------------------+------------------------+------+
+|1     |top                         |                        |   527|
+|2     |  U0                        |dht11_axi_top           |   527|
+|3     |    u0                      |dht11_axi               |   526|
+|4     |      u0                    |dht11_ctrl              |   511|
+|5     |        DP                  |datapath                |   451|
+|6     |          c_checker         |global_checker          |    16|
+|7     |            checker_20_40us |checker_20_40           |     3|
+|8     |            checker_26_28us |checker_26_28           |     1|
+|9     |            checker_50us    |checker__parameterized0 |     1|
+|10    |            checker_70us    |checker__parameterized1 |     7|
+|11    |            checker_80us    |checker                 |     4|
+|12    |          c_counter         |counter_master          |    69|
+|13    |            c1              |counter                 |    69|
+|14    |          c_sampler         |sampler2                |   291|
+|15    |          c_shift_register  |sr                      |    75|
+|16    |        fsm                 |FSM                     |    60|
++------+----------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11309 ; free virtual = 30165
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 102 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1437.141 ; gain = 107.477 ; free physical = 11308 ; free virtual = 30165
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1437.141 ; gain = 534.230 ; free physical = 11309 ; free virtual = 30166
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+170 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1437.141 ; gain = 435.512 ; free physical = 11304 ; free virtual = 30160
+INFO: [Common 17-1381] The checkpoint '/tmp/build.bevivino/syn/top.runs/top_dht11_axi_top_0_synth_1/top_dht11_axi_top_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 15 cell refs.
+INFO: [Common 17-1381] The checkpoint '/tmp/build.bevivino/syn/top.runs/top_dht11_axi_top_0_synth_1/top_dht11_axi_top_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1460.156 ; gain = 0.000 ; free physical = 11301 ; free virtual = 30158
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 24 13:19:13 2017...

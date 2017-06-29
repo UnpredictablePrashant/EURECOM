@@ -1,0 +1,85 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/homes/mendoza/Documents/Digitales/ds-2017/20170413_exercises/fernando.mendoza
+Ect
+Z1 w1492069970
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/homes/mendoza/Documents/Digitales/ds-2017/20170413_exercises/fernando.mendoza/ct.vhd
+Z5 F/homes/mendoza/Documents/Digitales/ds-2017/20170413_exercises/fernando.mendoza/ct.vhd
+l0
+L5
+V9mfW@Z0Kikag@RK0]B`AM3
+!s100 m4lY]ARLCXQ8HWcY:CBUZ3
+Z6 OL;C;10.5;63
+32
+Z7 !s110 1492074001
+!i10b 1
+Z8 !s108 1492074000.000000
+Z9 !s90 -novopt|/homes/mendoza/Documents/Digitales/ds-2017/20170413_exercises/fernando.mendoza/ct.vhd|/homes/mendoza/Documents/Digitales/ds-2017/20170413_exercises/fernando.mendoza/ct_sim.vhd|
+Z10 !s107 /homes/mendoza/Documents/Digitales/ds-2017/20170413_exercises/fernando.mendoza/ct_sim.vhd|/homes/mendoza/Documents/Digitales/ds-2017/20170413_exercises/fernando.mendoza/ct.vhd|
+!i113 1
+Z11 tExplicit 1 CvgOpt 0
+Aarc
+R2
+R3
+Z12 DEx4 work 2 ct 0 22 9mfW@Z0Kikag@RK0]B`AM3
+l15
+L14
+VG^<0G8IXWTz`dTXGMkXVS3
+!s100 MI0T;OVO9g_]WCW1lf8_R0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+Ect_sim
+Z13 w1492072928
+R2
+R3
+R0
+Z14 8/homes/mendoza/Documents/Digitales/ds-2017/20170413_exercises/fernando.mendoza/ct_sim.vhd
+Z15 F/homes/mendoza/Documents/Digitales/ds-2017/20170413_exercises/fernando.mendoza/ct_sim.vhd
+l0
+L4
+VWZE244kUH[dXEYjOC2U?61
+!s100 :iE^^I1<lz3;;GZBkMGU30
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+Asim
+R12
+R2
+R3
+DEx4 work 6 ct_sim 0 22 WZE244kUH[dXEYjOC2U?61
+l14
+L7
+VI]fZJ1IWf8bi@XbAFAUkE0
+!s100 _7Q^l]FV8_O^AXI7<Aj;T0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11

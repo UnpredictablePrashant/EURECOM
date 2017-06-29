@@ -1,0 +1,6 @@
+image:
+{
+  [bootloader]/home/mc/Documenti/zybo/fsbl.elf
+  top.runs/impl_1/top_wrapper.bit
+  /home/mc/Documenti/zybo/u-boot.elf
+}

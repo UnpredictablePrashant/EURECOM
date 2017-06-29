@@ -1,0 +1,4 @@
+#Do not send tag files
+*.tag
+*.o
+*.cf

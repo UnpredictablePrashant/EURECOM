@@ -1,0 +1,116 @@
+# General purpose
+SHELL		:= bash
+rootdir		:= $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
+heredir		:= $(realpath .)
+BUILDDIR	?= /tmp/build-$(USER)
+hdlsrcs		:= $(wildcard $(rootdir)/*.vhd)
+HDLSRCS		:= $(patsubst $(rootdir)/%,%,$(hdlsrcs))
+TAGSDIR		:= $(BUILDDIR)/tags
+TAGS		:= $(addprefix $(TAGSDIR)/,$(HDLSRCS))
+
+V		:= @
+Q		:= --quiet
+
+# GHDL
+VCOM		:= ghdl -a
+VCOMFLAGS	:= --std=08 --ieee=standard
+VELAB		:= ghdl -e
+VELABFLAGS	:= --std=08 --ieee=standard
+VSIMFLAGS	:=
+VSIMIFLAGS	:= --vcd=- | gtkwave --vcd
+
+# Messages
+define HELP_message
+make targets:
+  make help             print this message (default goal)
+  make F=foo.vhd com    compile foo.vhd
+  make com              compile all VHDL source files
+  make U=foo sim        simulate design unit foo (file foo.vhd), command line interface
+  make U=foo simi       simulate design unit foo (file foo.vhd), graphical user interface
+  make clean            delete all automatically created files and directories
+
+directories:
+  hdl sources          $(rootdir)
+  build directory      $(BUILDDIR)
+
+customizable make variables:
+  BUILDDIR             ($(BUILDDIR))
+endef
+export HELP_message
+
+# Help
+help:
+	$(V)echo "$$HELP_message"
+
+ifeq ($(heredir),$(rootdir))
+
+# Compilation
+ifeq ($(F),)
+
+com: $(TAGS)
+
+else
+
+com: $(TAGSDIR)/$(F)
+
+endif
+
+$(TAGS): $(TAGSDIR)/%: % | $(TAGSDIR)
+	$(V)$(MAKE) $(Q) -C $(TAGSDIR) -f $(rootdir)/Makefile $*
+
+$(BUILDDIR):
+	$(V)echo [MKDIR] $@ && \
+	mkdir -p $@
+
+$(TAGSDIR): | $(BUILDDIR)
+	$(V)echo [MKDIR] $@ && \
+	mkdir -p $@
+
+clean:
+	$(V)echo '[RM] $(BUILDDIR)' && \
+	rm -rf $(BUILDDIR)
+
+# Simulation
+ifeq ($(U),)
+
+sim simi:
+	$(V)echo "Please specify the design unit to simulate:" && \
+	echo "make U=foo $@"
+
+else
+
+sim simi: | $(TAGSDIR)
+	$(V)$(MAKE) $(Q) -C $(TAGSDIR) -f $(rootdir)/Makefile U=$(U) $@
+
+endif
+
+else ifeq ($(heredir),$(realpath $(TAGSDIR)))
+
+-include $(rootdir)/dep.mk
+
+$(HDLSRCS): %: $(rootdir)/%
+	$(V)echo '[VCOM] $*' && \
+	cd $(BUILDDIR) && \
+	$(VCOM) $(VCOMFLAGS) $(rootdir)/$* && \
+	touch $(TAGSDIR)/$*
+
+sim simi: $(U).elaborated
+
+$(U).elaborated: $(U).vhd
+	$(V)echo "[VELAB] $(U)" && \
+	cd $(BUILDDIR) && \
+	$(VELAB) $(VELABFLAGS) $(U) && \
+	touch $(TAGSDIR)/$(U).elaborated
+
+sim:
+	$(V)echo "[VSIM] $(U)" && \
+	cd $(BUILDDIR) && \
+	./$(U) $(VSIMFLAGS)
+
+simi:
+	$(V)echo "[VSIM] $(U)" && \
+	cd $(BUILDDIR) && \
+	./$(U) $(VSIMIFLAGS)
+
+endif
+

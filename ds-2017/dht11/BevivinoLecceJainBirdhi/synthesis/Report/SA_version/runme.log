@@ -1,0 +1,575 @@
+
+*** Running vivado
+    with args -log top_dht11_sa_top_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_dht11_sa_top_0.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source top_dht11_sa_top_0.tcl -notrace
+Command: synth_design -top top_dht11_sa_top_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5431 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1081.203 ; gain = 178.297 ; free physical = 11851 ; free virtual = 30626
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_dht11_sa_top_0' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ip/top_dht11_sa_top_0/synth/top_dht11_sa_top_0.vhd:68]
+	Parameter freq bound to: 125 - type: integer 
+INFO: [Synth 8-3491] module 'dht11_sa_top' declared at '/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/dht11_sa_top.vhd:9' bound to instance 'U0' of component 'dht11_sa_top' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ip/top_dht11_sa_top_0/synth/top_dht11_sa_top_0.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'dht11_sa_top' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/dht11_sa_top.vhd:24]
+	Parameter freq bound to: 125 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dht11_sa' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/dht11_sa.vhd:22]
+	Parameter freq bound to: 125 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'debouncer' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/debouncer.vhd:37]
+	Parameter n0 bound to: 50000 - type: integer 
+	Parameter n1 bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (1#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/debouncer.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'dht11_ctrl' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/dht11_ctrl.vhd:27]
+	Parameter freq bound to: 125 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FSM' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/FSM.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (2#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/FSM.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'datapath' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/datapath.vhd:36]
+	Parameter freq bound to: 125 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'global_checker' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/global_checker.vhd:26]
+	Parameter freq bound to: 125 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'checker_20_40' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/checker_20_40.vhd:16]
+	Parameter freq bound to: 125 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'checker_20_40' (3#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/checker_20_40.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'checker_26_28' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/checker_26_28.vhd:16]
+	Parameter freq bound to: 125 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'checker_26_28' (4#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/checker_26_28.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'checker' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/checker.vhd:21]
+	Parameter N bound to: 80 - type: integer 
+	Parameter low_lim bound to: 64 - type: integer 
+	Parameter freq bound to: 125 - type: integer 
+	Parameter up_lim bound to: 96 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'checker' (5#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/checker.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'checker__parameterized0' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/checker.vhd:21]
+	Parameter N bound to: 50 - type: integer 
+	Parameter low_lim bound to: 35 - type: integer 
+	Parameter freq bound to: 125 - type: integer 
+	Parameter up_lim bound to: 63 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'checker__parameterized0' (5#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/checker.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'checker__parameterized1' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/checker.vhd:21]
+	Parameter N bound to: 70 - type: integer 
+	Parameter low_lim bound to: 53 - type: integer 
+	Parameter freq bound to: 125 - type: integer 
+	Parameter up_lim bound to: 87 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'checker__parameterized1' (5#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/checker.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'global_checker' (6#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/global_checker.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'sampler2' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/sampler2.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'sampler2' (7#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/sampler2.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'sr' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/sr.vhd:17]
+	Parameter N bound to: 40 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sr' (8#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/sr.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'counter_master' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/counter_master.vhd:16]
+	Parameter freq bound to: 125 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'counter' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/counter.vhd:16]
+	Parameter N bound to: 18 - type: integer 
+	Parameter freq bound to: 125 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (9#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/counter.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized0' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/counter.vhd:16]
+	Parameter N bound to: 23 - type: integer 
+	Parameter freq bound to: 125 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized0' (9#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/counter.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'counter_master' (10#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/counter_master.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (11#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/datapath.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'dht11_ctrl' (12#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/dht11_ctrl.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'display' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/display.vhd:20]
+	Parameter N bound to: 4 - type: integer 
+	Parameter M bound to: 32 - type: integer 
+	Parameter T bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/display.vhd:34]
+INFO: [Synth 8-226] default block is never used [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/display.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'display' (13#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/display.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'checksum' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/checksum.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'checksum' (14#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/checksum.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'dht11_sa' (15#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/dht11_sa.vhd:22]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: lvcmos33 - type: string 
+	Parameter SLEW bound to: slow - type: string 
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'IOBUF' [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/dht11_sa_top.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'dht11_sa_top' (16#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ipshared/e165/dht11_sa_top.srcs/sources_1/imports/Datapath/dht11_sa_top.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'top_dht11_sa_top_0' (17#1) [/tmp/build.bevivino/syn/top.srcs/sources_1/bd/top/ip/top_dht11_sa_top_0/synth/top_dht11_sa_top_0.vhd:68]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1122.680 ; gain = 219.773 ; free physical = 11807 ; free virtual = 30582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1122.680 ; gain = 219.773 ; free physical = 11807 ; free virtual = 30582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1131.676 ; gain = 228.770 ; free physical = 11807 ; free virtual = 30582
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "l" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSM'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00000 |                            00000
+        starting_process |                            00001 |                            00001
+                wait18ms |                            00010 |                            00010
+          start_sampler0 |                            00011 |                            00011
+        check_20_40us_on |                            00100 |                            00100
+       check_20_40us_off |                            00101 |                            00101
+       rst_before_sampl1 |                            00110 |                            00110
+          start_sampler1 |                            00111 |                            00111
+     check_80us_on_first |                            01000 |                            01000
+    check_80us_off_first |                            01001 |                            01001
+       rst_before_sampl2 |                            01010 |                            01011
+          start_sampler2 |                            01011 |                            01100
+    check_80us_on_second |                            01100 |                            01101
+   check_80us_off_second |                            01101 |                            01110
+       rst_before_sampl3 |                            01110 |                            01111
+          start_sampler3 |                            01111 |                            10000
+               set_index |                            10000 |                            10001
+           check_50us_on |                            10001 |                            10010
+          check_50us_off |                            10010 |                            10011
+       rst_before_sampl4 |                            10011 |                            10100
+          start_sampler4 |                            10100 |                            10101
+       check_one_zero_on |                            10101 |                            11000
+      check_one_zero_off |                            10110 |                            11001
+               shift_one |                            10111 |                            11010
+              shift_zero |                            11000 |                            11011
+              stop_shift |                            11001 |                            11100
+         increment_index |                            11010 |                            11101
+       rst_before_sampl5 |                            11011 |                            10110
+          start_sampler5 |                            11100 |                            10111
+              data_ready |                            11101 |                            11110
+          protocol_error |                            11110 |                            01010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1146.695 ; gain = 243.789 ; free physical = 11792 ; free virtual = 30567
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	  31 Input      5 Bit        Muxes := 1     
+	  50 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	  31 Input      1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	  31 Input      5 Bit        Muxes := 1     
+	  50 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  31 Input      1 Bit        Muxes := 18    
+Module checker_20_40 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module checker_26_28 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module checker 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module checker__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module checker__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module sampler2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module sr 
+Detailed RTL Component Info : 
++---Registers : 
+	               40 Bit    Registers := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+Module counter__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+Module checksum 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[1]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[2]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[3]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[4]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[5]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[6]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[7]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[8]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[9]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[10]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[11]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[12]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[13]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[14]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[15]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[16]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[17]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[18]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[19]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[20]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[21]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[22]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[23]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[24]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[25]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[26]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[27]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[28]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[29]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/u0/u0/DP/c_counter/c1/flag_reg[30]' (FDRE) to 'U0/u0/u0/DP/c_counter/c1/flag_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/u0/u0/DP/c_counter/c1/flag_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/u0/u0/DP/c_sampler/flag_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_sampler/flag_reg[1]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c1/flag_reg[31]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[31]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[30]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[29]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[28]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[27]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[26]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[25]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[24]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[23]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[22]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[21]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[20]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[19]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[18]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[17]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[16]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[15]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[14]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[13]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[12]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[11]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[10]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[9]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[8]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[7]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[6]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[5]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[4]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[3]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[2]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[1]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/flag_reg[0]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[0]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[1]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[2]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[3]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[4]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[5]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[6]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[7]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[8]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[9]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[10]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[11]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[12]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[13]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[14]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[15]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[16]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[17]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[18]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[19]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[20]) is unused and will be removed from module top_dht11_sa_top_0.
+INFO: [Synth 8-3332] Sequential element (U0/u0/u0/DP/c_counter/c2/cnt_reg[21]) is unused and will be removed from module top_dht11_sa_top_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1234.043 ; gain = 331.137 ; free physical = 11706 ; free virtual = 30481
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1234.043 ; gain = 331.137 ; free physical = 11706 ; free virtual = 30481
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1242.043 ; gain = 339.137 ; free physical = 11698 ; free virtual = 30473
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1242.047 ; gain = 339.141 ; free physical = 11698 ; free virtual = 30473
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1242.047 ; gain = 339.141 ; free physical = 11698 ; free virtual = 30473
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1242.047 ; gain = 339.141 ; free physical = 11698 ; free virtual = 30473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1242.047 ; gain = 339.141 ; free physical = 11698 ; free virtual = 30473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1242.047 ; gain = 339.141 ; free physical = 11698 ; free virtual = 30473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1242.047 ; gain = 339.141 ; free physical = 11698 ; free virtual = 30473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    51|
+|2     |LUT1   |   108|
+|3     |LUT2   |   146|
+|4     |LUT3   |    26|
+|5     |LUT4   |    18|
+|6     |LUT5   |    36|
+|7     |LUT6   |    38|
+|8     |MUXF7  |     8|
+|9     |MUXF8  |     1|
+|10    |FDRE   |   166|
+|11    |FDSE   |     4|
+|12    |IOBUF  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------------+------------------------+------+
+|      |Instance                    |Module                  |Cells |
++------+----------------------------+------------------------+------+
+|1     |top                         |                        |   603|
+|2     |  U0                        |dht11_sa_top            |   603|
+|3     |    u0                      |dht11_sa                |   602|
+|4     |      c_checksum            |checksum                |     6|
+|5     |      deb                   |debouncer               |    71|
+|6     |      u0                    |dht11_ctrl              |   525|
+|7     |        DP                  |datapath                |   453|
+|8     |          c_checker         |global_checker          |    16|
+|9     |            checker_20_40us |checker_20_40           |     3|
+|10    |            checker_26_28us |checker_26_28           |     3|
+|11    |            checker_50us    |checker__parameterized0 |     3|
+|12    |            checker_70us    |checker__parameterized1 |     3|
+|13    |            checker_80us    |checker                 |     4|
+|14    |          c_counter         |counter_master          |    73|
+|15    |            c1              |counter                 |    73|
+|16    |          c_sampler         |sampler2                |   291|
+|17    |          c_shift_register  |sr                      |    73|
+|18    |        fsm                 |FSM                     |    72|
++------+----------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1242.047 ; gain = 339.141 ; free physical = 11698 ; free virtual = 30473
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1242.047 ; gain = 227.844 ; free physical = 11698 ; free virtual = 30473
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1242.051 ; gain = 339.145 ; free physical = 11698 ; free virtual = 30473
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+159 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1362.152 ; gain = 360.527 ; free physical = 11630 ; free virtual = 30405
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/tmp/build.bevivino/syn/top.runs/top_dht11_sa_top_0_synth_1/top_dht11_sa_top_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1818.676 ; gain = 456.523 ; free physical = 11283 ; free virtual = 30072
+INFO: [Coretcl 2-1174] Renamed 17 cell refs.
+INFO: [Common 17-1381] The checkpoint '/tmp/build.bevivino/syn/top.runs/top_dht11_sa_top_0_synth_1/top_dht11_sa_top_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1819.676 ; gain = 0.000 ; free physical = 11259 ; free virtual = 30061
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 24 13:03:46 2017...
